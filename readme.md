@@ -14,9 +14,9 @@
 
 ## 📌 Visão Geral
 
-Este repositório documenta a instalação completa do **OpenWrt no Acer Predator Connect W6x**, partindo do zero absoluto.
+Este repositório documenta a minha instalação completa do **OpenWrt no Acer Predator Connect W6x**, partindo do zero absoluto.
 
-O objetivo não é apenas ensinar o processo, mas também mostrar os **problemas reais enfrentados** e como resolvê-los.
+O objetivo não é apenas ajudar no processo, mas também mostrar os **problemas reais enfrentados** e como resolvê-los.
 
 > Este projeto representa a **Etapa 0 do meu homelab de cibersegurança**.
 
@@ -47,8 +47,10 @@ Neste guia busco resolver exatamente esses pontos.
 
 ## PRIMEIRO PASSO GERAL - Identificação de Lote
 - Com o roteador desconectado da energia ou lan/wan, abra a sua tampa superior pressionando a parte maior que fica atrás dele, para cima. A tampa do roteador é de encaixe, então basta desencaixar. Mas é bem pesadinho, então preste atenção para não quebrar o roteador no processo.
-- Identifique o tipo de UART (É uma parte do roteador que transmite sinal via Serial) do roteador. Pode ser de pads (essas superfícies prateadas) igual o meu, ou pode vir pinos, igual o da referência do site da OpenWRT.
+<img src="https://github.com/daabarbacena/OpenWRT-w6x-router/blob/main/images/roteador-demo.png" alt="Demonstrativo-tampa" width="600">
+- Identifique o tipo de UART (É uma parte do roteador que transmite sinal via Serial) do roteador. Pode ser de pads (essas superfícies prateadas na segunda imagem) igual o meu, ou pode vir pinos, igual o da referência do site da OpenWRT.
 <img src="https://openwrt.org/_media/media/acer/acer-predator-connect-w6x-uart-pins.jpg?w=400&tok=021209" alt="UART com pino" width="600">
+<img src="https://github.com/daabarbacena/OpenWRT-w6x-router/blob/main/images/w6x-interno.jpeg" alt="Demonstrativo-tampa" width="600">
 
 - Guarde essa informação para o seguinte passo.
 
@@ -94,6 +96,8 @@ O roteador não vinha com header — apenas pads lisos.
 
 ⚠️ Nunca conectar VCC  
 
+<img src="https://github.com/daabarbacena/OpenWRT-w6x-router/blob/main/images/openWRT-setupado.jpeg" alt="Demonstrativo-tampa" width="600">
+
 ---
 
 ### 2. Confusão RS232 vs TTL
@@ -119,9 +123,9 @@ Isso levou à dúvida:
 - o menu não existe?
 - o OpenWrt oficial para esse modelo depende de algo que o meu roteador não oferece?
 
-### Por que isso confunde
+### Confusão
 
-A documentação oficial mostra que o método depende do U-Boot, mas no dia a dia o boot passa muito rápido.
+A documentação oficial mostra que o método depende do U-Boot, mas na hora do "vamo ver" o boot passa muito rápido.
 
 Então, para quem está começando, parece que o procedimento oficial é impossível.
 
