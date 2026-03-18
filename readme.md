@@ -6,6 +6,7 @@
  Não, ele pode te ajudar muito, mas só cobre o básico. Além de que existem vários lotes de fabricação e cada modelo é diferente. Aqui neste passo a passo tentarei ajudar com o máximo de informações para essa instalação.
 # 2- Este não é um guia de instalação oficial, é apenas a MINHA experiência sendo compartilhada.
 # 3- Pessoalmente recomendo pedir para sua IA de preferência fazer um resumo do repositório, sem pular nenhuma informação, pois é bastante conteúdo e vai te poupar tempo.
+# 4- Como Bônus, adicionei uma pasta com dois scripts para o shell do OpenWRT, ColetaInfo - coleta informações do sistema para facilitar a resolução de problemas e TesteGeral faz basicamente a mesma coisa, porém com um ping, então ele testa conexão e coleta informações. Ambos são para troubleshooting. Caso você tenha algum problema com seu sistema, rode esses comandos, copie a saída e terá praticamente 100% das informações que precisa.
 
 # OpenWrt no Acer Predator Connect W6x
 ### Instalação completa via Serial + U-Boot + TFTP (Guia real com erros e soluções)
